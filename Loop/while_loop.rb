@@ -33,6 +33,7 @@ while current_index <= last_index
   current_index += 1
 end
 
+# Recursive 
 # Factorial 
 
 def factorial (num)
