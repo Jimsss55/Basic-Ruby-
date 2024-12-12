@@ -1,0 +1,17 @@
+
+[1mFrom:[0m /home/jimsss/Desktop/Ruby/AdventOfCode/day1.rb:11 AocDay1#method_to_split:
+
+    [1;34m10[0m: [32mdef[0m [1;34mmethod_to_split[0m(input)
+ => [1;34m11[0m:   binding.pry
+    [1;34m12[0m:   leftlist = []
+    [1;34m13[0m:   rightlist = []
+    [1;34m14[0m: 
+    [1;34m15[0m:   input.each_line [32mdo[0m |line|
+    [1;34m16[0m:     [32mnext[0m [32mif[0m line.strip.empty?
+    [1;34m17[0m:     left, right = line.split
+    [1;34m18[0m:     leftlist << left.to_i
+    [1;34m19[0m:     rightlist << right.to_i
+    [1;34m20[0m:   [32mend[0m
+    [1;34m21[0m:   [leftlist, rightlist]
+    [1;34m22[0m: [32mend[0m
+
