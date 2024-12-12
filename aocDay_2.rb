@@ -1,10 +1,5 @@
-# require_relative './day2_input'
+require_relative 'day2_input'
 
-#   Iterate over each line and check whether each element follows the rule
-# The levels are either all increasing or all decreasing.
-# Any two adjacent levels differ by at least one and at most three.
-
-require 'pry'
 class Day2_a
   attr_accessor :input, :input_arr, :incre_decre_none,:count
   def initialize(input)
@@ -15,7 +10,7 @@ class Day2_a
   end
 
   def method_to_split
-    input.each_line do |line|
+    $x.each_line do |line|
       next if line.strip.empty?
       @input_arr << line.split.map(&:to_i)
     end
@@ -54,17 +49,13 @@ class Day2_a
     @count
   end
 
-  def method_to_sum
-    p method_valid_decre
-  end
-
   def call
     method_to_split
     check_incre_decre
     method_valid_incre
-    method_valid_decre
-    method_to_sum
+    p method_valid_decre
   end
 end
 
-
+day2 = Day2_a.new($x)
+day2.call
