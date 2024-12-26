@@ -1,0 +1,21 @@
+
+[1mFrom:[0m /home/jimsss/Desktop/Ruby/AdventOfCode/day_4_lalit.rb:17 AOCFour#call:
+
+    [1;34m15[0m: [32mdef[0m [1;34mcall[0m
+    [1;34m16[0m:   word_search_array.each_with_index [32mdo[0m |char_arr, i|
+ => [1;34m17[0m:     binding.pry
+    [1;34m18[0m:     char_arr.each_with_index [32mdo[0m |char, j|
+    [1;34m19[0m:       [32mif[0m char == [31m[1;31m'[0m[31mX[1;31m'[0m[31m[0m
+    [1;34m20[0m:         check_north_and_increment_count(i, j)
+    [1;34m21[0m:         check_east_and_increment_count(i, j)
+    [1;34m22[0m:         check_west_and_increment_count(i, j)
+    [1;34m23[0m:         check_south_and_increment_count(i, j)
+    [1;34m24[0m:         check_north_east_increment_count(i, j)
+    [1;34m25[0m:         check_north_west_increment_count(i, j)
+    [1;34m26[0m:         check_south_east_increment_count(i, j)
+    [1;34m27[0m:         check_south_west_increment_count(i, j)
+    [1;34m28[0m:       [32mend[0m
+    [1;34m29[0m:     [32mend[0m
+    [1;34m30[0m:   [32mend[0m
+    [1;34m31[0m: [32mend[0m
+
